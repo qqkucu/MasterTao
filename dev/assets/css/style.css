@@ -1,0 +1,392 @@
+@charset "UTF-8";
+/*
+Theme Name: CustomTheme
+Theme URI: https://wordpress.org/themes/CustomTheme/
+Author: the Rost team
+Author URI: http://rost.com.ua/
+Description: CustomTheme brings your site to life with immersive featured images and subtle animations. Our default theme works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: CustomTheme
+Tags: custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.bg-color {
+  background-color: #282B38;
+  border: 1px solid;
+}
+
+.bg-color-second {
+  background-color: #363A4D;
+}
+
+.color-btn {
+  background-color: #E58D35;
+}
+
+.color-item {
+  background-color: #89C249;
+}
+
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("assets/fonts/ProximaNova-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova Lt";
+  src: url("assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("assets/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  height: 114px;
+  max-height: 100dvh;
+  max-width: 100%;
+  background: #282B38;
+}
+header h2 {
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 32px;
+}
+
+.banner {
+  color: #FFFFFF;
+}
+
+footer {
+  height: 423px;
+  max-height: 100dvh;
+  max-width: 100%;
+  background: #282B38;
+}
+footer h2 {
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 150px;
+}
+
+.markup.container h4 {
+  margin-bottom: 12px;
+}
+.markup.container .example {
+  display: inline-flex;
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.markup.container .example-checkbox {
+  margin-bottom: 20px;
+}
+.markup.container .btn-tao {
+  display: inline-block;
+}
+.markup.container .btn-margin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.wrapper {
+  background-color: #282B38;
+  color: #FFFFFF;
+}
+
+::selection {
+  background: #89C249;
+  color: #FFFFFF;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.markup.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row::selection {
+  background-color: #89C249;
+}
+
+.fw-light {
+  font-family: "Proxima Nova Lt";
+  font-weight: 300;
+}
+
+.fw-regular {
+  font-family: "Proxima Nova Rg";
+  font-weight: 400;
+}
+
+.fw-semibold {
+  font-family: "Proxima Nova Lt";
+  font-weight: 600;
+}
+
+.fw-bold {
+  font-family: "Proxima Nova Rg";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 21px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+a {
+  color: #E58D35;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #E58D35;
+}
+
+.num-item::marker {
+  color: #89C249;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.num-item {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.bull-item {
+  list-style-type: none;
+  margin-bottom: 4px;
+}
+
+.bull-item::before {
+  content: "";
+  background-color: #89C249;
+  margin-right: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -8px;
+}
+
+[type=checkbox] {
+  display: none;
+}
+
+label {
+  margin-bottom: 6px;
+}
+
+[type=checkbox] + label:before {
+  content: "";
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: 1px solid;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  margin-right: 9px;
+}
+
+input:checked + label::before {
+  content: "";
+  background: url(assets/img/check-mark.svg) center no-repeat #FFFFFF;
+}
+
+[type=checkbox] + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+[type=radio] {
+  display: none;
+}
+
+[type=radio] + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+[type=radio] + label:before {
+  content: "";
+  display: inline-block;
+  background-color: #FFFFFF;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin-right: 9px;
+  top: 2px;
+  margin-right: 9px;
+}
+
+[type=radio]:checked + label:before {
+  content: "•";
+  background: #fff;
+  font-size: 40px;
+  line-height: 18px;
+  color: #282B38;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 90px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: 600;
+  line-height: 146%;
+  letter-spacing: 0.6px;
+  border-color: #E58D35;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #89C249;
+}
+
+.btn-first,
+.btn-other {
+  width: 153px;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btn-first {
+  padding: 14px 17.84px 14px 18.16px;
+}
+
+.btn-other {
+  padding: 14px 24.16px;
+}
+
+.btn-second {
+  width: 171px;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
+  padding: 14px 27px;
+}
+
+.btn-send_request {
+  width: 310px;
+  height: 68px;
+  font-size: 16px;
+  padding: 23px 141px 22px 33px;
+}
+
+.btn-send_request::after {
+  right: 19.42px;
+}
+
+.btn-price {
+  width: 293px;
+  height: 68px;
+}
+
+.btn-send_request,
+.btn-price,
+.btn-nextstep,
+.btn-reg-cargo {
+  font-size: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.btn-price,
+.btn-nextstep {
+  padding: 23px 97px 22px 33px;
+}
+
+.btn-reg-cargo {
+  padding: 23px 94px 22px 33px;
+}
+
+.btn-nextstep {
+  width: 253px;
+  height: 68px;
+}
+
+.btn-reg-cargo {
+  width: 243px;
+  height: 68px;
+}
+
+.btn-other {
+  background-color: transparent;
+  border-color: #E58D35;
+}
+
+.btn-send_request::after,
+.btn-price::after,
+.btn-nextstep::after,
+.btn-reg-cargo::after {
+  content: "";
+  position: absolute;
+  background: url(../assets/img/btn-icon.svg);
+  background-size: contain;
+  width: 27px;
+  height: 27px;
+  top: 21.42px;
+  bottom: 20.42px;
+}
+
+.btn-price::after,
+.btn-nextstep::after,
+.btn-reg-cargo::after {
+  right: 21.42px;
+}
+
+.scroll {
+  overflow: auto;
+  height: 300px;
+  padding-right: 15px;
+  scrollbar-color: #E58D35 #fff;
+}
+/*# sourceMappingURL=style.css.map */
